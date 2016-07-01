@@ -12,7 +12,7 @@ while True:
     file.write(text)
     file.close()
     answer_name = 'Genre_' + str(number) + '.txt'
-    file = open(answer_name)
+    file = open(answer_name,'w',encoding='utf-8')
     if genre == 0:
         file.write(u'Художественный')
     elif genre == 1:
