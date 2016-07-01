@@ -1,8 +1,10 @@
 print('Введи номер, с которого будет идти нумерация')
 number = int(input())
 while True:
-    print('Введи текст')
+    print('Введи текст (для выхода введи 0)')
     text = input()
+    if text=='0':
+        break
     print('Введи жанр цифрой(Художественный - 0, научный - 1, публицистический - 2')
     genre = int(input())
     file_name = 'Sample_Text_' + str(number) + '.txt'
@@ -17,3 +19,6 @@ while True:
         file.write('научный')
     elif genre == 2:
         file.write('публицистический')
+    file.close()
+    number+=1
+
