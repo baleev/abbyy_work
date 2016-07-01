@@ -27,4 +27,3 @@ while True:
         file.write(u'публицистический')
     file.close()
     number += 1
-    zdfgsd
