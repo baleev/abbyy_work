@@ -8,11 +8,11 @@ while True:
     print('Введи жанр цифрой(Художественный - 0, научный - 1, публицистический - 2)')
     genre = int(input())
     file_name = 'Sample_Text_' + str(number) + '.txt'
-    file = open(file_name, 'w')
+    file = open(file_name, 'w', encoding='utf-8')
     file.write(text)
     file.close()
     answer_name = 'Genre_' + str(number) + '.txt'
-    file = open(answer_name,'w',encoding='utf-8')
+    file = open(answer_name, 'w', encoding='utf-8')
     if genre == 0:
         file.write(u'Художественный')
     elif genre == 1:
